@@ -54,7 +54,7 @@ jobs:
         # You can remove the one that doesn't apply to your app to speed up the workflow a bit.
       - name: regenerate cargo.lock (ubuntu only)
         if: matrix.platform == 'ubuntu-22.04' # This must match the platform value defined above.
-        run: sudo rm src-tauri/cargo.lock && cargo update
+        run: sudo rm src-tauri/Cargo.lock && cargo update
 
 
       - name: install frontend dependencies
