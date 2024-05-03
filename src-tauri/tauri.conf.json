@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "identifier": "com.whl.tauri",
   "build": {
-    "beforeDevCommand": "pnpm dev",
+    "beforeDevCommand": "pnpm dev ",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist"
@@ -19,15 +19,12 @@
         "transparent": true,
         "resizable": false,
         "shadow": true,
+        "theme": "Dark",
         "windowEffects": {
           "effects": [
-            "tabbed"
-          ],
-          "color": [
-            225,
-            225,
-            225,
-            200
+            "acrylic",
+            "tabbed",
+            "mica"
           ]
         }
       }

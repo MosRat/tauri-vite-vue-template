@@ -7,6 +7,9 @@ const mobile = !!/android|ios/.exec(process.env.TAURI_ENV_PLATFORM);
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
+    define: {
+        __VUE_PROD_DEVTOOLS__: true,
+    },
     resolve: {
         alias: {
             '@': resolve(__dirname, "./src"),

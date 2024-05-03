@@ -9,7 +9,8 @@
     "tauri:build": "tauri build",
     "tauri:android": "tauri android dev",
     "tauri:android-build": "tauri android build",
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"vue-devtools\"",
+    "dev-tools": "vue-devtools",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri"
@@ -33,6 +34,7 @@
     "@vue/devtools": "^7.1.3",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
+    "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
