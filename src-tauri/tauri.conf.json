@@ -19,10 +19,9 @@
         "transparent": true,
         "resizable": false,
         "shadow": true,
-        "theme": "Dark",
+        "theme": "Light",
         "windowEffects": {
           "effects": [
-            "acrylic",
             "tabbed",
             "mica"
           ]
